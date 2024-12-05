@@ -11,7 +11,9 @@ app.use(morgan("dev")); // Log every request to the console
 app.use(helmet()); // Set security HTTP headers
 app.use(compression());
 
-// Init DB
+// Init db
+// require("./dbs/init.mongodb.lv0");
+require("./dbs/init.mongodb");
 
 // Init Routes
 app.get("/", (req, res, next) => {
