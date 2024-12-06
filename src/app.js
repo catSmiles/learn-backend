@@ -15,6 +15,10 @@ app.use(compression());
 // require("./dbs/init.mongodb.lv0");
 require("./dbs/init.mongodb");
 
+// Check over load
+const { checkOverLoad } = require("./helpers/check.connect");
+checkOverLoad();
+
 // Init Routes
 app.get("/", (req, res, next) => {
   const strCompress = "Hello world!";
