@@ -17,6 +17,6 @@
 
 #### 5. Làm sao để chạy file `access.post.http`?
 
-- Cần cài đặt extension [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- Cần cài đặt extension [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) and [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client)
 - run command `node --watch server.js`
 - Mở file `access.post.http` và chạy
