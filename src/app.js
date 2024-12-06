@@ -1,3 +1,4 @@
+require("dotenv").config();
 // import express from "express";
 const express = require("express");
 const morgan = require("morgan");
@@ -15,9 +16,13 @@ app.use(compression());
 // require("./dbs/init.mongodb.lv0");
 require("./dbs/init.mongodb");
 
-// Check over load
-const { checkOverLoad } = require("./helpers/check.connect");
-checkOverLoad();
+/**
+ * Check over load
+ *
+ * @example
+ * const { checkOverLoad } = require("./helpers/check.connect");
+ * checkOverLoad();
+ */
 
 // Init Routes
 app.get("/", (req, res, next) => {
