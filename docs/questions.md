@@ -14,3 +14,9 @@
 #### 3. Bạn có thể hướng dẫn cách triển khai Singleton để tạo kết nối MongoDB trong Node.js không?
 
 #### 4. Tôi muốn sử dụng Singleton để tạo kết nối cơ sở dữ liệu MongoDB trong Node.js. Bạn có thể giải thích tại sao Singleton phù hợp và cung cấp một ví dụ cách triển khai không?
+
+#### 5. Làm sao để chạy file `access.post.http`?
+
+- Cần cài đặt extension [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- run command `node --watch server.js`
+- Mở file `access.post.http` và chạy
