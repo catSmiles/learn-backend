@@ -81,4 +81,18 @@ có nghĩa là bạn đang chạy file JavaScript `server.js` bằng **Node.js**
 
 ---
 
+### **Chạy lệnh `curl http://localhost:3111/` sử dụng `git bash`**
+
+Để chạy được lệnh `curl http://localhost:3111/` sử dụng `git bash`, cần chạy lệnh `npm run start` trước đó.
+
+```powershell
+npm run start
+```
+
+```bash
+curl http://localhost:3111/
+```
+
+---
+
 ### **Dòng lệnh thứ n**

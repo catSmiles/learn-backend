@@ -25,13 +25,6 @@ require("./dbs/init.mongodb");
  */
 
 // Init Routes
-app.get("/", (req, res, next) => {
-  const strCompress = "Hello world!";
-
-  return res.status(200).json({
-    message: "Welcome to WSW eCommerce API",
-    metadata: strCompress.repeat(100000),
-  });
-});
+app.use("/", require("./routes"));
 
 module.exports = app;
