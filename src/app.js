@@ -11,6 +11,8 @@ const app = express();
 app.use(morgan("dev")); // Log every request to the console
 app.use(helmet()); // Set security HTTP headers
 app.use(compression());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Init db
 // require("./dbs/init.mongodb.lv0");
